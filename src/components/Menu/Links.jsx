@@ -23,6 +23,36 @@ const itemVariants = {
     opacity: 0,
   },
 };
+const links = [
+  {
+    name: "Home",
+    path: "",
+  },
+  {
+    name: "About Us",
+    path: "aboutus",
+  },
+  {
+    name: "Get Informed",
+    path: "getinformed",
+  },
+  {
+    name: "Take Action",
+    path: "takeaction",
+  },
+  {
+    name: "Contact Us",
+    path: "contactus",
+  },
+  {
+    name: "Blog",
+    path: "blog",
+  },
+  {
+    name: "Join The Coalition",
+    path: "jointhecoalition",
+  },
+];
 const Links = () => {
   return (
     // <div className="max-w-[1300px] w-full h-full mx-auto flex justify-between gap-10 pt-[170px]">
@@ -118,29 +148,18 @@ const Links = () => {
     // </div>
     <motion.div
       variants={variants}
-      className="absolute w-full h-full flex flex-col items-center justify-center gap-5 text-white"
+      className="absolute w-full h-full flex flex-col items-center justify-center sm:gap-5 gap-3 text-white"
     >
-      <motion.button variants={itemVariants} whileHover={{scale:1.1}} className="text-2xl font-medium">
-        <NavLink>Home</NavLink>
-      </motion.button>
-      <motion.button variants={itemVariants} whileHover={{scale:1.1}} className="text-2xl font-medium">
-        <NavLink>About Us</NavLink>
-      </motion.button>
-      <motion.button variants={itemVariants} whileHover={{scale:1.1}} className="text-2xl font-medium">
-        <NavLink>Get Informed</NavLink>
-      </motion.button>
-      <motion.button variants={itemVariants} whileHover={{scale:1.1}} className="text-2xl font-medium">
-        <NavLink>Take Action</NavLink>
-      </motion.button>
-      <motion.button variants={itemVariants} whileHover={{scale:1.1}} className="text-2xl font-medium">
-        <NavLink>Contact Us</NavLink>
-      </motion.button>
-      <motion.button variants={itemVariants} whileHover={{scale:1.1}} className="text-2xl font-medium">
-        <NavLink>Blog</NavLink>
-      </motion.button>
-      <motion.button variants={itemVariants} whileHover={{scale:1.1}} className="text-2xl font-medium">
-        <NavLink>Join The Coalition</NavLink>
-      </motion.button>
+      {links.map((data, i) => (
+        <motion.button
+          key={i}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          className="sm:text-2xl text-lg font-medium"
+        >
+          <NavLink to={`./${data.path}`}>{data.name}</NavLink>
+        </motion.button>
+      ))}
     </motion.div>
   );
 };

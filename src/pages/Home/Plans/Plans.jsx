@@ -3,20 +3,20 @@ import { RiSecurePaymentFill } from "react-icons/ri";
 import { MdHealthAndSafety } from "react-icons/md";
 const Plans = () => {
   return (
-    <div className="bg-gredient w-full text-white px-10 py-24">
+    <div className="bg-gredient w-full text-white sm:px-10 px-5 sm:py-24 py-10">
       <div className="max-w-[1300px] w-full flex flex-col items-center justify-center gap-28 mx-auto">
         {/* first */}
-        <div className="w-full flex bg-[#0a3a5a] rounded-md">
+        <div className="w-full flex sm:flex-row flex-col bg-[#0a3a5a] rounded-md">
           <img
             src="https://static.wixstatic.com/media/02c388_733a2c237aa5460ea6c66bd0de75e3a9~mv2.jpg/v1/fill/w_324,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pexels-andrea-piacquadio-3814571.jpg"
             alt=""
             className="w-[400px] p-5"
           />
-          <div className="flex flex-col items-start justify-center gap-5">
-            <span className="text-3xl font-semibold tracking-tight">
+          <div className="flex flex-col sm:items-start items-center justify-center gap-5">
+            <h1 className="sm:text-3xl text-lg font-semibold sm:text-start text-center tracking-tight">
               Outdated Payment Models are the Problem
-            </span>
-            <span className="font-medium text-balance text-lg">
+            </h1>
+            <span className="font-medium text-balance sm:text-lg text-sm sm:text-start text-center sm:px-0 px-5 sm:pb-0 pb-3">
               Cost-based reimbursement is key to helping these essential rural
               providers remain open but unsustainably inflates prices to
               patients and payors. As a result, Rural Medicare beneficiaries pay
@@ -26,14 +26,14 @@ const Plans = () => {
           </div>
         </div>
         {/* second */}
-        <div className="w-full bg-[#0a3a5a] relative flex flex-col items-center justify-center p-10 gap-5 rounded-md hover-outline transition-all duration-300">
-          <div className="absolute -top-10 size-[100px] rounded-lg text-white flex items-center justify-center glassEffect">
-            <RiSecurePaymentFill size={60} />
+        <div className="w-full bg-[#0a3a5a] relative flex flex-col items-center justify-center sm:p-10 p-5 gap-5 rounded-md hover-outline transition-all duration-300">
+          <div className="absolute -top-10 sm:size-[100px] size-[60px] rounded-lg text-white flex items-center justify-center glassEffect">
+            <RiSecurePaymentFill className="sm:text-[60px] text-[30px]" />
           </div>
-          <span className="text-3xl tracking-tight font-semibold pt-8">
+          <span className="sm:text-3xl text-lg tracking-tight font-semibold sm:pt-8">
             New Payment Method
           </span>
-          <h1 className="font-medium text-center text-lg">
+          <h1 className="font-medium text-center sm:text-lg text-sm">
             In order to create healthcare equality between rural and urban
             Medicare beneficiaries, we propose a new Critical Access Hospital
             and Rural Health Clinic payment system using a hybrid of
@@ -49,14 +49,14 @@ const Plans = () => {
             programs and value-based care initiatives.{" "}
           </h1>
         </div>
-        <div className="w-full bg-[#0a3a5a] relative flex flex-col items-center justify-center p-10 gap-5 rounded-md hover-outline transition-all duration-300">
-          <div className="absolute -top-10 size-[100px] rounded-lg text-green-300 flex items-center justify-center glassEffect">
-            <MdHealthAndSafety size={60} />
+        <div className="w-full bg-[#0a3a5a] relative flex flex-col items-center justify-center sm:p-10 p-5 gap-5 rounded-md hover-outline transition-all duration-300">
+          <div className="absolute -top-10 sm:size-[100px] size-[60px] rounded-lg text-green-300 flex items-center justify-center glassEffect">
+            <MdHealthAndSafety className="sm:text-[60px] text-[30px]" />
           </div>
-          <span className="text-3xl tracking-tight font-semibold pt-8 text-green-300">
+          <h1 className="sm:text-3xl text-lg tracking-tight sm:text-start text-center font-semibold sm:pt-8 text-green-300 pt-2">
             Increasing Quality For Beneficiaries
-          </span>
-          <h1 className="font-medium text-center text-lg text-green-300">
+          </h1>
+          <h1 className="font-medium text-center sm:text-lg text-sm text-green-300">
             Current cost-based reimbursement is not tied to value and
             participation in quality programs is not rewarded. The Rural Health
             Clinic &quot;All Inclusive Rate&quot; pays providers the same amount

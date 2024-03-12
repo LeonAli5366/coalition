@@ -31,7 +31,7 @@ const Menu = () => {
     >
       <motion.div
         variants={variants}
-        className="fixed w-[400px] h-screen top-0 left-0 bottom-0 bg-[#0b3f63] z-[100]"
+        className="fixed sm:w-[400px] w-[200px] h-screen top-0 left-0 bottom-0 bg-[#0b3f63] z-[100]"
       >
         <Links />
       </motion.div>

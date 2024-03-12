@@ -16,12 +16,12 @@ const ToggleContactBtn = ({ setOpen, open }) => {
       animate={open ? "open" : "closed"}
       transition={{ duration: 1, type: "spring", stiffness: 150 }}
       variants={variants}
-      className="buttonEffect size-16 rounded-full flex items-center justify-center fixed bottom-24 right-24 z-[100]"
+      className="buttonEffect sm:size-16 size-12 rounded-full flex items-center justify-center fixed sm:bottom-24 sm:right-24 bottom-5 right-5 z-[100]"
     >
       {open ? (
-        <GiCrossMark size={20} color="green" />
+        <GiCrossMark className="sm:text-[20px] text-[16px]" color="green" />
       ) : (
-        <FaPaperPlane color="green" size={20} />
+        <FaPaperPlane color="green" className="sm:text-[20px] text-[16px]" />
       )}
     </motion.button>
   );

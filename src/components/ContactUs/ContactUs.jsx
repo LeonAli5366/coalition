@@ -24,23 +24,23 @@ const ContactUs = () => {
         animate={open ? "open" : "closed"}
         transition={{ type: "spring", stiffness: 100, duration: 1 }}
         variants={variant}
-        className="fixed w-[500px] h-[520px] bottom-20 right-20 bg-[#0b3f63] rounded-md z-[100] flex flex-col items-center p-12 text-white gap-5"
+        className="fixed sm:w-[500px] sm:h-[520px] w-[300px] h-[310px] sm:bottom-20 sm:right-20 bottom-16 right-16 bg-[#0b3f63] rounded-md z-[100] flex flex-col items-center sm:p-12 p-5 text-white sm:gap-5 gap-2"
       >
-        <span className="text-xl font-semibold">Send Us Your Question</span>
+        <span className="sm:text-xl text-base font-semibold">Send Us Your Question</span>
         <div className="w-full flex flex-col">
-            <label htmlFor="name" className="font-medium after:content-['*'] after:text-red-500 after:pl-1">Name</label>
-            <input type="text" name="" id="name" placeholder="Name" className="w-full placeholder:italic py-2 outline-none border-rgb bg-transparent px-2"/>
+            <label htmlFor="name" className="font-medium sm:text-base text-sm after:content-['*'] after:text-red-500 after:pl-1">Name</label>
+            <input type="text" name="" id="name" placeholder="Name" className="w-full placeholder:italic py-1 sm:py-2 outline-none border-rgb bg-transparent px-2"/>
         </div>
         <div className="w-full flex flex-col">
-            <label htmlFor="email" className="font-medium after:content-['*'] after:text-red-500 after:pl-1">Email</label>
-            <input type="text" name="" id="email" placeholder="Email" className="w-full placeholder:italic py-2 outline-none border-rgb bg-transparent px-2"/>
+            <label htmlFor="email" className="font-medium sm:text-base text-sm after:content-['*'] after:text-red-500 after:pl-1">Email</label>
+            <input type="text" name="" id="email" placeholder="Email" className="w-full placeholder:italic py-1 sm:py-2 outline-none border-rgb bg-transparent px-2"/>
         </div>
         <div className="w-full flex flex-col">
-            <label htmlFor="description" className="font-medium after:content-['*'] after:text-red-500 after:pl-1">Description</label>
-            <textarea name="" id="description" placeholder="Description" className="w-full placeholder:italic py-2 outline-none border-rgb bg-transparent px-2"/>
+            <label htmlFor="description" className="font-medium sm:text-base text-sm after:content-['*'] after:text-red-500 after:pl-1">Description</label>
+            <textarea name="" id="description" placeholder="Description" className="w-full placeholder:italic py-1 sm:py-2 outline-none border-rgb bg-transparent px-2"/>
         </div>
         <div className="w-full flex justify-end">
-        <button className=" px-7 py-2 font-medium buttonEffect rounded-md">Send</button>
+        <button className="sm:px-7 px-5 sm:py-2 py-1 sm:text-base text-sm font-medium buttonEffect rounded-md">Send</button>
         </div>
       </motion.div>
       <ToggleContactBtn setOpen={setOpen} open={open} />
