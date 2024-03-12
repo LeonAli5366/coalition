@@ -7,15 +7,17 @@ const Footer = () => {
         <div className="max-w-[1300px] flex mx-auto w-full h-full px-5 py-5">
           <div className="w-full flex flex-col items-start gap-5 border-r border-slate-600">
             <span className="text-3xl uppercase font-semibold tracking-tight text-[#fec40e]">
-              Donate
+            Join The Coalition
             </span>
             <span className="text-white text-lg">
-              Help us provide accurate and unbiased voting information by
-              donating today!
+              Join our Coalition by enter your email
             </span>
+            <div className="w-full">
             <button className="glass px-7 py-3 rounded-full text-white font-medium">
               Make a donation
             </button>
+            <input type="text" name="" id="" className="" />
+            </div>
           </div>
 
           <div className="w-full flex flex-col items-start pl-8 gap-5">

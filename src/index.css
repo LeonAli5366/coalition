@@ -5,32 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.card:hover {
-  .img {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-  .card-logo > :nth-child(1) {
-    display: block;
-  }
-  .card-logo > :nth-child(2) {
-    background-color: #fec40e;
-  }
-}
-#link #icon {
-  display: none;
-}
-#link:hover {
-  span {
-    text-decoration: underline;
-  }
-  #icon {
-    color: #fec40e;
-    display: block;
-  }
-}
-#link:hover #icon2 {
-  background-color: #fec40e;
+.hover-outline:hover,
+.hover-outline:focus {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .glassEffect {
   background: linear-gradient(
@@ -66,7 +43,7 @@
   );
 }
 
-.buttonEffect{
+.buttonEffect {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0),
@@ -77,7 +54,8 @@
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.buttonEffect:hover,.buttonEffect:focus{
+.buttonEffect:hover,
+.buttonEffect:focus {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.2),

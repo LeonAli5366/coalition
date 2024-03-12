@@ -1,89 +1,78 @@
 /* eslint-disable react/jsx-key */
-import { FaCheck } from "react-icons/fa";
-import { motion } from "framer-motion";
-
-const list = [
-  "1-866-OUR-VOTE (866-687-8683) Call or text",
-  "1-888-VE-Y-VOTA (en Español)",
-  "1-888-API-VOTE (Asian multilingual assistance)",
-  "1-844-YALLA-US (Arabic)",
-];
+import { RiSecurePaymentFill } from "react-icons/ri";
+import { MdHealthAndSafety } from "react-icons/md";
 const Plans = () => {
   return (
-    <div className="bg-gredient w-full flex flex-col">
-      <div className="w-full bg-gradient-to-r from-[#F04393] to-[#F9C449] mt-4">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{once:true, amount:0.5}}
-          transition={{ duration: 0.5 }}
-          className="max-w-[1300px] w-full flex items-center py-5 mx-auto gap-3"
-        >
+    <div className="bg-gredient w-full text-white px-10 py-24">
+      <div className="max-w-[1300px] w-full flex flex-col items-center justify-center gap-28 mx-auto">
+        {/* first */}
+        <div className="w-full flex bg-[#0a3a5a] rounded-md">
           <img
-            src="http://vote411-prod.s3.amazonaws.com/s3fs-public/2021-07/Action.png"
+            src="https://static.wixstatic.com/media/02c388_733a2c237aa5460ea6c66bd0de75e3a9~mv2.jpg/v1/fill/w_324,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pexels-andrea-piacquadio-3814571.jpg"
             alt=""
-            className="w-7"
+            className="w-[400px] p-5"
           />
-          <span className="text-xl tracking-tighter uppercase font-medium text-white">
-            Nationwide Voting Rules Quick View
-          </span>
-          <span>
-            What voting options are available in your state, and how do those
-            options compare to other states?
-          </span>
-          <span className="text-sm text-[#098ea7]">Click here!</span>
-        </motion.div>
-      </div>
-
-      <div className="max-w-[1300px] mx-auto w-full flex justify-between p-14 gap-10">
-        <div className="w-full h-[430px] relative">
-          <motion.div
-            initial={{ opacity: 0, x: -50, y: -50 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{once:true, amount:0.5}}
-            transition={{ duration: 1 }}
-            className="bg-[#6e6da9] absolute top-0 left-0 w-[400px] h-[350px] z-10 flex flex-col items-start p-10 gap-5"
-          >
-            <span className="text-4xl text-white font-semibold tracking-tight">
-              MAKE A VOTING PLAN TODAY!
+          <div className="flex flex-col items-start justify-center gap-5">
+            <span className="text-3xl font-semibold tracking-tight">
+              Outdated Payment Models are the Problem
             </span>
-            <span className="text-white">Making Democracy Work</span>
-            <button className="glass px-7 py-2 rounded-full font-medium text-white hover:text-black transition-all duration-300">
-              Make your plan
-            </button>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50, y: 50 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            viewport={{once:true, amount:0.5}}
-            transition={{ duration: 1 }}
-            className="absolute bottom-0 right-14 w-[400px] h-[350px] bg-[url('http://vote411-prod.s3.amazonaws.com/s3fs-public/2019-07/First%20time%20voter%20background.png')] overflow-hidden "
-          ></motion.div>
-        </div>
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          transition={{ duration: 1 }}
-          viewport={{once:true, amount:0.5}}
-          whileInView={{ opacity: 1, x: 0 }}
-          className="w-full flex flex-col gap-5 ring-gredient p-10"
-        >
-          <span className="text-2xl text-white tracking-tight uppercase">
-            Election Day Problems?
-          </span>
-          <span className="text-white">
-            Report an election issue by calling:
-          </span>
-          <div className="flex flex-col gap-2">
-            {list.map((li) => (
-              <div className="flex items-center gap-3">
-                <div className="size-10 rounded-full flex items-center justify-center glassEffect">
-                  <FaCheck color="green" size={22} />
-                </div>
-                <span className="text-white">{li}</span>
-              </div>
-            ))}
+            <span className="font-medium text-balance text-lg">
+              Cost-based reimbursement is key to helping these essential rural
+              providers remain open but unsustainably inflates prices to
+              patients and payors. As a result, Rural Medicare beneficiaries pay
+              coinsurance 2-6 times higher than all other Medicare beneficiaries
+              for outpatient services.
+            </span>
           </div>
-        </motion.div>
+        </div>
+        {/* second */}
+        <div className="w-full bg-[#0a3a5a] relative flex flex-col items-center justify-center p-10 gap-5 rounded-md hover-outline transition-all duration-300">
+          <div className="absolute -top-10 size-[100px] rounded-lg text-white flex items-center justify-center glassEffect">
+            <RiSecurePaymentFill size={60} />
+          </div>
+          <span className="text-3xl tracking-tight font-semibold pt-8">
+            New Payment Method
+          </span>
+          <h1 className="font-medium text-center text-lg">
+            In order to create healthcare equality between rural and urban
+            Medicare beneficiaries, we propose a new Critical Access Hospital
+            and Rural Health Clinic payment system using a hybrid of
+            fee-for-service and cost-based reimbursement. Hospitals and clinics
+            would bill under the OPPS for outpatient services, the IPPS for
+            inpatient services, and the SNF payment system for swing beds, while
+            continuing to file a cost report as they do today for unreimbursed
+            costs. They would receive monthly payments of estimated costs, minus
+            paid claims, under the same rules of CBR used today. This simple
+            change would lower prices to the same levels paid by all other
+            beneficiaries, subsequently reducing coinsurance to equal rates and
+            finally enabling all rural providers to participate fully in quality
+            programs and value-based care initiatives.{" "}
+          </h1>
+        </div>
+        <div className="w-full bg-[#0a3a5a] relative flex flex-col items-center justify-center p-10 gap-5 rounded-md hover-outline transition-all duration-300">
+          <div className="absolute -top-10 size-[100px] rounded-lg text-green-300 flex items-center justify-center glassEffect">
+            <MdHealthAndSafety size={60} />
+          </div>
+          <span className="text-3xl tracking-tight font-semibold pt-8 text-green-300">
+            Increasing Quality For Beneficiaries
+          </span>
+          <h1 className="font-medium text-center text-lg text-green-300">
+            Current cost-based reimbursement is not tied to value and
+            participation in quality programs is not rewarded. The Rural Health
+            Clinic &quot;All Inclusive Rate&quot; pays providers the same amount
+            per visit regardless of the care provided, with no tie to quality
+            and value, and doesn&apos;t pay for preventative care if added to
+            the visit. Providers have been excluded from earning more for
+            quality, including Medicare Meaningful Use and MACRA, leaving rural
+            patients to die younger and suffer more from chronic disease. Since
+            physicians aren&apos;t either paid or incentivized to promote
+            preventive care, beneficiaries in rural areas are less likely to
+            receive these life-saving services. The proposed new payment system
+            would compensate and incentivize providers to participate in
+            inpatient and outpatient quality programs and greatly reduce rural
+            disparities.
+          </h1>
+        </div>
       </div>
     </div>
   );

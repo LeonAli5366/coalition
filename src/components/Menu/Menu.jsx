@@ -5,7 +5,7 @@ import Links from "./Links";
 
 const variants = {
   open: {
-    clipPath: "circle(2500px at 50px 50px)",
+    clipPath: "circle(1500px at 50px 50px)",
     transition: {
       type: "spring",
       stiffness: 20,
@@ -31,7 +31,7 @@ const Menu = () => {
     >
       <motion.div
         variants={variants}
-        className="absolute w-full h-[510px] top-0 left-0 bottom-0 bg-[#0b3f63] z-[100]"
+        className="fixed w-[400px] h-screen top-0 left-0 bottom-0 bg-[#0b3f63] z-[100]"
       >
         <Links />
       </motion.div>
