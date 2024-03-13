@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import ContactUs from "./components/ContactUs/ContactUs";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import GetInfromed from "./pages/GetInformed/GetInfromed";
 const App = () => {
   return (
     <div className="w-full relative">
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/getinformed" element={<GetInfromed />} />
       </Routes>
       <Footer />
     </div>
